@@ -16,7 +16,9 @@ $this->email = $_email;
 
 }
 
-$user1 = new User()
-$user2 = new User()
+$user1 = new User("marco", "verdi", "marco.verdi@gmail.com");
+$user2 = new User("giorgio", "rossi", "giorgio.rossi@gmail.com");
+
+$users = [$user1, $user2];
 
  ?>
