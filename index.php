@@ -31,12 +31,21 @@ $users = [$user1, $user2];
   </head>
   <body>
     <table>
+
       <thead>
-        <td>nome</td>
-        <td>cognome</td>
-        <td>email</td>
+        <tr>
+          <th>nome</th>
+          <th>cognome</th>
+          <th>email</th>
+        </tr>
 
       </thead>
+      <?php foreach ($users as $user) { ?>
+            <tr>
+                <td> <?php echo $user->nome ?> </td>
+                <td> <?php echo $user->cognome ?> </td>
+                <td> <?php echo $user->email ?> </td>
+            </tr>
     </table>
 
   </body>
