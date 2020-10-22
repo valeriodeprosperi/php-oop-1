@@ -4,7 +4,7 @@ public $nome;
 public $cognome;
 public $email;
 
-public function _construct($_nome, $_cognome, $_email)
+public function __construct($_nome, $_cognome, $_email)
 {
 $this->nome = $_nome;
 $this->cognome = $_cognome;
